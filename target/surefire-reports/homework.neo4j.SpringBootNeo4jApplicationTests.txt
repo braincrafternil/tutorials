@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: homework.neo4j.SpringBootNeo4jApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.162 s <<< FAILURE! - in homework.neo4j.SpringBootNeo4jApplicationTests
+contextLoads(homework.neo4j.SpringBootNeo4jApplicationTests)  Time elapsed: 0.008 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalArgumentException: Invalid source 'classpath:/homework/neo4j/homework.neo4j.repositories'
+

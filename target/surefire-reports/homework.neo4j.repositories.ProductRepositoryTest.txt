@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: homework.neo4j.repositories.ProductRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.33 s <<< FAILURE! - in homework.neo4j.repositories.ProductRepositoryTest
+testPersistence(homework.neo4j.repositories.ProductRepositoryTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'neo4jAuditionBeanFactoryPostProcessor': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/neo4j/Neo4jDataAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.neo4j.ogm.session.SessionFactory]: Factory method 'sessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class org.neo4j.ogm.session.SessionFactory
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/neo4j/Neo4jDataAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.neo4j.ogm.session.SessionFactory]: Factory method 'sessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class org.neo4j.ogm.session.SessionFactory
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.neo4j.ogm.session.SessionFactory]: Factory method 'sessionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class org.neo4j.ogm.session.SessionFactory
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.neo4j.ogm.session.SessionFactory
+
